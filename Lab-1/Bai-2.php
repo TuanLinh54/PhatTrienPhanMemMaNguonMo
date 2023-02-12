@@ -49,8 +49,9 @@
             $ht = $_POST["txtHoTen"];
             $email = $_POST["txtEmail"];
             $nd =$_POST["txtNoiDung"];
+            $date = "Time: ".date('d-m-y');
 
-            $dong = "\r\n".$ht."\t".$email."\t".$nd;
+            $dong = "\r\n".$ht."\t".$email."\t".$nd."\t".$date;
 
             fputs($file,$dong);
             fclose($file);
